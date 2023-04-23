@@ -113,7 +113,7 @@ form {
   padding: 25px;
   border-radius: 5px;
   box-shadow:5px rgba(0,0,0,0.2);
-  width: 300px;
+  width: 200px;
   margin: 5px;
   background-size: 310px;
 }
@@ -156,13 +156,13 @@ section {
 
 .ladoesquerdo {
   
-  flex: 0 0 20%; /* Define a largura do bloco 1 */
+  flex: 0px; /* Define a largura do bloco 1 */
   border-left: 1px dashed black;
   border-right: 1px dashed black;
 }
 
 .ladodireito {
-  flex: 0 0 75%; /* Define a largura do bloco 2 */
+  flex:900px; /* Define a largura do bloco 2 */
   border-right: 1px dashed black;
 }
 .imagemcommargem {
