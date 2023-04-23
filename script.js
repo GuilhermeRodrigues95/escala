@@ -12,4 +12,19 @@ menuLinks.forEach(link => {
     event.target.parentElement.classList.add("active");
   });
 });
-    
+function openPopup() {
+  // Seleciona o elemento do pop-up
+  const popup = document.getElementById("popup");
+  
+  // Define a opacidade inicial como zero
+  popup.style.opacity = "0";
+  
+  // Define o estilo de exibição do pop-up como flexível
+  popup.style.display = "flex";
+  
+  // Define uma animação de transição para o efeito de aparecimento
+  popup.style.transition = "opacity 0.5s ease-in-out";
+  
+  // Define a opacidade final como 1
+  popup.style.opacity = "1";
+}

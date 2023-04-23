@@ -109,17 +109,19 @@ header {
     border-right: 1px dashed black;
 }
 form {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow:10px rgba(0,0,0,0.2);
+  background-color: #fecc30;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow:5px rgba(0,0,0,0.2);
   width: 300px;
-  margin: 2px;
+  margin: 5px;
+  background-size: 310px;
 }
 
 label {
   display: block;
   font-weight: bold;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
   color: #000000;
 }
 
@@ -146,3 +148,25 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ladoesquerdo {
+  
+  flex: 0 0 20%; /* Define a largura do bloco 1 */
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
+}
+
+.ladodireito {
+  flex: 0 0 75%; /* Define a largura do bloco 2 */
+  border-right: 1px dashed black;
+}
+.imagemcommargem {
+  margin-top: 8px; /* Define uma margem superior de 20 pixels */
+  border-radius: 5px;
+}
+
