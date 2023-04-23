@@ -109,7 +109,6 @@ header {
     border-right: 1px dashed black;
 }
 form {
-  flex: 10%;
   background-color: #fecc30;
   padding: 30px;
   border-radius: 5px;
