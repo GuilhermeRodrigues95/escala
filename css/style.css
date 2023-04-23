@@ -162,7 +162,7 @@ section {
 }
 
 .ladodireito {
-  flex:80%; /* Define a largura do bloco 2 */
+  flex:70%; /* Define a largura do bloco 2 */
   border-right: 1px dashed black;
 }
 .imagemcommargem {
