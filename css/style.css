@@ -1,9 +1,13 @@
 header {
-    background-color: #fecc30;
+    background-color: #195128;
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
+    font-size: 56PX;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:inherit;
+    color: #ccc;
   }
   
   header img {
@@ -30,21 +34,23 @@ header {
   nav ul li {
     flex: 1;
     text-align: center;
-    padding: 10px;
+    padding: 4px;
   }
   
   nav ul li:hover {
-    background-color: #fbff00;
+    background-color:#195128;
   }
   
   
   main {
     padding: 10px;
-    background-color: #fecc30;
+    background-color:#195128;
     border-top: 1px dashed black;
     border-bottom: 1px dashed rgb(0, 0, 0);
     border-left: 1px dashed black;
     border-right: 1px dashed black; 
+    color: #ccc;
+    text-decoration:underline;
   }
   nav ul {
     list-style: none;
@@ -79,16 +85,16 @@ header {
   
   nav ul ul li {
     float:lef;
-    width: 95%;
+    width: 80%;
   }
    
   nav ul ul ul {
     position: absolute;
     left: 100%;
-    top: 0;
+    top: 5px;
   }
   .footer {
-    background-color: #fecc30;
+    background-color: #195128;
     border-top: 1px dashed black;
     border-bottom: 1px dashed rgb(0, 0, 0);
     border-left: 1px dashed black;
@@ -109,20 +115,21 @@ header {
     border-right: 1px dashed black;
 }
 form {
-  background-color: #fecc30;
+  background-color: #195128;
   padding: 30px;
   border-radius: 5px;
-  box-shadow:5px rgba(0,0,0,0.2);
+  box-shadow:5px rgba(255, 255, 255, 0.2);
   width: 250x;
   margin:5px;
   background-size: 250px;
+  text-decoration:none;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #000000;
+  color: #ffffff;
 }
 
 input[type="number"], input[type="password"] {
@@ -155,7 +162,8 @@ section {
 }
 
 .ladoesquerdo {
-  
+  color: #000;
+  font-size: 20PX;
   flex: 10%; /* Define a largura do bloco 1 */
   border-left: 1px dashed black;
   border-right: 1px dashed black;
