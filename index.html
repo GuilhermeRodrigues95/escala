@@ -1,68 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ESCALA DE SERVIÇO</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header>
-       <p>ESCALA DE SERVIÇO</p>
-      </header>
-      <nav>
-        <ul>
-            <li><a href="" class="active">Página Inicial</a></li>
-          <li><a href="">Escala de serviço</a>
-          </li>
-          <li><a href="">Previsão da escala</a>
-          </li>
-          <li><a href="">Efetivo por escala</a>
-        </ul>
-      </nav>
-      <center>
-    <main>
-        <h1>Bem-vindo ao controle de escalas do 18º B Trnp!</h1>
-        <P>Versão de testes</P>
-      </main>
-      <script src="script.js"></script>
-      <section>
-        <div class="ladoesquerdo">
-          <h1 style="text-decoration: underline;">Login</h1>
-          <form>
-              <label for="numero">Identidade:</label>
-              <input type="number" id="numero" name="numero" required>
-        
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required><br><br>
-        
-            <input type="submit" value="Entrar">
-          </form>
-            </div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet">
+    <title>Página Inicial</title>
+</head>
+<body>
+ <header> <!--Cabeçalho-->
+        <div id="title">
+            <h1>Guilherme Rodrigues</h1>   
+            <h3>Desenvolvedor Web</h3> 
+        </div>  
 
-        <div class="ladodireito">
-        <a href="painel/index.php">Escala de serviço</a>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        <br> </br>
-        </div>
-        </section>
-<footer>
-<div class="footer">
-  <p style="display: flex; font-size: 30px; font-family: 'Times New Roman', Times, serif; color: white  ;">Avenida Duque de Caxias, 1127, Amambaí - Campo Grande/MS - CEP 79.100-401</p>
-    </footer>
-</div>
-  </body>
+        <ul> <!-- Lista desordenada -->
+            <a href="#"><li>Inicio</li></a> <!--a significa que é o link href é o caminho-->
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" id="inscreva-se-but"><li>Painel de controle</li></a>
+ </header>   
+    <main> <!--parte principal do site-->
+        <aside><!--tag semantica para definir uma página que tenha um lado-->
+            <h2><span>Inscreva-se Agora</span></h2> <!--h2 é o texto de nível 2 -->
+            <h2>NewsLatte</h2>
+            <p>Inscreva-se para receber atualizações sobre o nosso portifólio, promoções e muito mais.</p> <!--parágrafo-->
+            <!--tag semantica para formulário-->
+            <form>
+                <input type="text" placeholder="Nome"> <!--placeholder é o nome que fica dentrod a caíxa de texto-->
+                <input type="email" placeholder="E-mail">
+                <input type="submit" value="Enviar >">
+                <!--em caso de botão não se troca o texto com o placeholder e sim com o value-->
+            </form>
+        </aside>
+        <article> <!--div semantica onde serão abrigadas imagens-->
+            <img src="images/logo.png" alt="imagem">
+        </article>
+    </main>
+</body>
 </html>
