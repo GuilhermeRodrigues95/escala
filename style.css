@@ -60,16 +60,24 @@ header{
 
 .central{
     background: rgb(165, 165, 165);
-    width: 800px;
-    height: 700px;
+    width: 100%;
+    height: 85vh;
     margin:auto;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 footer{
     background-color: rgb(73, 72, 72);
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin: 0 auto;
-    margin-top: 1px;
+    margin-top: 0px;
+    padding: 1px 0px;
+}
+
+footer >h3{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+
 }
