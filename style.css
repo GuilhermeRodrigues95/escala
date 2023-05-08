@@ -22,6 +22,7 @@ body{
     padding: 5px 10px;
 }
 
+
 .barra1{
     background: #006400;
     width: 100%;
@@ -56,6 +57,9 @@ header{
 
 .textocentral >p{
     margin-top: 0;
+    color: red;
+    text-decoration:underline;
+    font-weight: bold;
 }
 
 .central{
