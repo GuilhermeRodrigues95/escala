@@ -1,12 +1,12 @@
 body{
     background: #FFE4C4;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin:0;
 
 }
 
 .title{
-    background: rgb(73, 72, 72);;
+    background: rgb(73, 72, 72);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -56,4 +56,20 @@ header{
 
 .textocentral >p{
     margin-top: 0;
+}
+
+.central{
+    background: rgb(165, 165, 165);
+    width: 800px;
+    height: 700px;
+    margin:auto;
+    margin-top: 5px;
+}
+
+footer{
+    background-color: rgb(73, 72, 72);
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 1px;
 }
