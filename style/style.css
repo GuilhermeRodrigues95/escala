@@ -297,7 +297,6 @@ footer {
 }
 
 footer >h1{
-  display: block;
   font-size:8px;
   text-align: center;
   color: white;
@@ -307,7 +306,6 @@ footer >h1{
 
 .conteinercentro{
   width: 100vw;
-  height: 60vh;
   margin: auto;
   display: flex;
  justify-content: space-between;
