@@ -112,8 +112,6 @@ nav ul {
 
   .conteinercentro{
     width: 960px;
-    height: 150px;
-    height: 600px;
     margin: auto;
     display: flex;
    justify-content: space-between;
@@ -122,23 +120,79 @@ nav ul {
   }
 
   .ladoesquerdo {
-    width: 18%;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:top;
+    width: 20%;
+    padding: 0px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    margin: 0;
   }
 
   .ladodireito {
     width: 80%;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-left: 1px dotted #b2b4b3;
+    margin: 0;
+    margin-top: 0;
   }
 
+.titulo2{
+  background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+  padding: 0px;
+  margin: 1px;
+  width: 98%;
+  margin-top: 5px;
+  align-items: center;
+  justify-content:center ;
+  padding: 6px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.titulo2 >h1{
+  color: white;
+  font-size: 14px;
+  text-decoration:underline dotted 1px;
+  margin: 0;
+}
+
+.titulo2 >h1:hover{
+  color: black;
+}
+
+.conteudo2{
+  background: #b2b4b3;
+  margin: 1px;
+  padding: 0px;
+  width: 98%;
+  border-radius: 5px;
+}
+
+.conteudo2 >h1{
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  border-bottom: 1px dotted black;
+  margin: 2px;
+}
+
+.conteudo2 >h2{
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  margin: 2px;
+  padding: 3px;
+  text-align: justify;
+}
+
+iframe{
+  width: 98%;
+  height: 95%;
+  margin: 5px;
+}
   @media screen and (max-width:700px){
     body{
       background: #ffffff;
