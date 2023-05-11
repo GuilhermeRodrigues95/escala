@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background: rgb(26, 161, 71);
+    background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
     margin: auto;
 }
 
@@ -16,7 +16,7 @@ header{
     margin: auto;
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
 
 }
 
@@ -94,7 +94,7 @@ nav ul {
 
   footer {
     margin: auto;
-    background: rgb(243, 242, 240);
+    background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
     height: 40px;
 
   }
@@ -105,7 +105,7 @@ nav ul {
     color: white;
     width: 960px;
     margin: auto;
-    color: black;
+    color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 15px;
   }
@@ -136,4 +136,140 @@ nav ul {
     justify-content: center;
     align-items: center;
     border-left: 1px solid black;
+  }
+
+
+  @media screen and (max-width:700px){
+    header{
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+  }
+  .conteiner{
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+.titulo{
+  margin: auto;
+  text-align: center;
+  height: 60vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.titulo >h1{
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.titulo img{
+  width: 5vw;
+  padding: 10px;
+}
+.sobre{
+  margin: auto;
+  text-align: center;
+  height: 60vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sobre >h1{
+  font-size: 8px;
+  margin-bottom:0px;
+}
+
+nav{
+  margin: auto;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  margin: auto;
+}
+
+h6{
+  font-size: 16px;
+  margin: 10px 0px;
+  padding: 0px;
+  color:rgb(186, 188, 189);
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+nav li {
+  display:inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+}
+
+footer {
+  width: 100vw;
+  margin: auto;
+  background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+  height: 4vh;
+  align-self: center;
+  display: flex;
+
+}
+
+footer >h1{
+  font-size:8px;
+  text-align: center;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+
+.conteinercentro{
+  width: 100vw;
+  height: 150px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+ justify-content: space-between;
+  color: black;
+  border-top: 1px solid black;
+}
+
+.ladoesquerdo {
+  width: 18%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ladodireito {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid black;
+}
   }
