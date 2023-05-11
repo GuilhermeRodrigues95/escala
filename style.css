@@ -1,5 +1,5 @@
 body{
-    background: #ffffff;
+    background: #828283;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
     height: 100vh;
@@ -7,7 +7,7 @@ body{
 }
 
 .title{
-    background: rgb(73, 72, 72);
+    background: #828283;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,7 +59,7 @@ header{
 
 
 .central{
-    background: rgb(165, 165, 165);
+    background: #828283;
     width: 100%;
     height: 60vh;
     margin:auto;
@@ -78,17 +78,52 @@ header{
 
 }
 footer{
-    background-color: rgb(73, 72, 72);
     width: 100%;
     height: 30px;
     margin: 0 auto;
     margin-top: 0px;
     padding: 1px 0px;
+    
+    text-align: center;
 }
 
 footer >h3{
-    color: rgb(0, 0, 0);
-    font-size: 14px;
+    color: white;
+    font-size: 12px;
     text-align: center;
 
 }
+
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0px 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+  }
+  
+  nav a:hover {
+    color: #006400;
+    transition: 0.5s;
+  }
+
+  .menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    justify-content: right;
+    background-color: rgb(110, 101, 101);
+  }
