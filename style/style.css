@@ -190,25 +190,23 @@ nav ul {
 nav{
   margin: auto;
   text-align: center;
+  display: flex;
 }
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  width: 960px;
+  width: 100vw;
   margin: auto;
+  font-size: 8px;;
 }
 
 h6{
-  font-size: 16px;
-  margin: 10px 0px;
-  padding: 0px;
-  color:rgb(186, 188, 189);
-  font-family: 'Times New Roman', Times, serif;
+  display: none;
   
 }
 nav li {
@@ -247,8 +245,7 @@ footer >h1{
 
 .conteinercentro{
   width: 100vw;
-  height: 150px;
-  height: 600px;
+  height: 60vh;
   margin: auto;
   display: flex;
  justify-content: space-between;
@@ -257,7 +254,7 @@ footer >h1{
 }
 
 .ladoesquerdo {
-  width: 18%;
+  width: 18vw;
   padding: 20px;
   text-align: center;
   justify-content: center;
@@ -265,7 +262,7 @@ footer >h1{
 }
 
 .ladodireito {
-  width: 80%;
+  width: 80vw%;
   padding: 20px;
   text-align: center;
   justify-content: center;
