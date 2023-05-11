@@ -332,8 +332,8 @@ footer >h1{
 .titulo2{
   background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
   padding: 0px;
-  margin: 0px;
-  width: 98%;
+  margin: 1px;
+  width: 100%;
   align-items: center;
   justify-content:center ;
   padding: 6px 0px;
@@ -354,10 +354,10 @@ footer >h1{
 
 .conteudo2{
   background: #b2b4b3;
-  margin: 0px;
+  margin: 1px;
   padding: 0px;
-  width: 98%;
-  border-radius: 5px;
+  width: 100%;
+  border-radius:5px;
 }
 
 .conteudo2 >h1{
