@@ -1,6 +1,6 @@
 body{
     background: #ffffff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
@@ -73,7 +73,6 @@ nav ul {
     margin: 10px 0px;
     padding: 0px;
     color:rgb(186, 188, 189);
-    font-family: 'Times New Roman', Times, serif;
     
   }
   nav li {
@@ -106,7 +105,6 @@ nav ul {
     width: 960px;
     margin: auto;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 15px;
   }
 
@@ -183,6 +181,7 @@ nav ul {
 .conteudo2 >h2{
   color: rgb(0, 0, 0);
   font-size: 12px;
+  font-style:normal;
   margin: 2px;
   padding: 3px;
   text-align: justify;
@@ -196,7 +195,6 @@ iframe{
   @media screen and (max-width:700px){
     body{
       background: #ffffff;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
       margin: auto;
   }
     
@@ -300,7 +298,6 @@ footer >h1{
   font-size:8px;
   text-align: center;
   color: white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 5px;
 }
 
