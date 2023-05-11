@@ -118,7 +118,7 @@ nav ul {
     display: flex;
    justify-content: space-between;
     color: black;
-    border-top: 1px dotted #b2b4b3;;
+    border-top: 1px dotted #b2b4b3;
   }
 
   .ladoesquerdo {
@@ -135,7 +135,7 @@ nav ul {
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid black;
+    border-left: 1px dotted #b2b4b3;
   }
 
 
@@ -273,6 +273,6 @@ footer >h1{
   text-align: center;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid black;
+  border-left:1px dotted #b2b4b3;
 }
   }
