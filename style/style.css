@@ -97,7 +97,7 @@ nav ul {
   footer {
     margin: auto;
     background: linear-gradient(to bottom, rgb(49, 108, 218), #0930e0);
-    height: 40px;
+    height: 6vh;
 
   }
 
@@ -108,7 +108,7 @@ nav ul {
     width: 960px;
     margin: auto;
     color: white;
-    padding: 15px;
+    padding: 20px;
   }
 
   .conteinercentro{
@@ -140,7 +140,7 @@ nav ul {
     border-left: 1px dotted #b2b4b3;
     margin: 0;
     margin-top: 0;
-    height: 500px;
+    height: 75vh;
   }
 
 .titulo2{
