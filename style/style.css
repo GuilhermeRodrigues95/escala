@@ -9,6 +9,7 @@ body{
 header{
     background: linear-gradient(to bottom, rgb(35, 14, 153), #300770);
     margin: auto;
+    width: 100vw;
 }
 
 .conteiner{
@@ -99,6 +100,7 @@ nav ul {
     margin: auto;
     background: linear-gradient(to bottom, rgb(35, 14, 153), #300770);
     height: 6vh;
+    width: 100vw;
 
   }
 
