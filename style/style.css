@@ -1,12 +1,12 @@
 body{
     background: #ffffff;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header{
-    background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+    background: linear-gradient(to bottom, rgb(49, 108, 218), #0930e0);
     margin: auto;
 }
 
@@ -43,6 +43,7 @@ header{
     margin: auto;
     text-align: center;
     height: 30px;
+    padding: 0;
     align-items: center;
     justify-content: center;
 }
@@ -50,6 +51,8 @@ header{
 .sobre >h1{
     font-size: 16px;
     margin-bottom: 0px;
+    color: red;
+    text-decoration: underline;
 }
 
 nav{
@@ -93,13 +96,13 @@ nav ul {
 
   footer {
     margin: auto;
-    background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+    background: linear-gradient(to bottom, rgb(49, 108, 218), #0930e0);
     height: 40px;
 
   }
 
   footer >h1{
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: white;
     width: 960px;
@@ -137,6 +140,7 @@ nav ul {
     border-left: 1px dotted #b2b4b3;
     margin: 0;
     margin-top: 0;
+    height: 500px;
   }
 
 .titulo2{
@@ -194,189 +198,4 @@ iframe{
   font-size: 20%;
   border-radius: 10px;
 }
-  @media screen and (max-width:700px){
-    body{
-      background: #ffffff;
-      margin: auto;
-  }
-    
-    header{
-      flex-direction: column;
-      margin: auto;
-      align-items: center;
-  }
-  .conteiner{
-    width: 100vw;
-    height: 10vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    color: white;
-
-}
-.titulo{
-  margin: auto;
-  text-align: center;
-  height: 60vw;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.titulo >h1{
-  font-size: 12px;
-  margin-top: 5px;
-  padding: 10px;
-}
-
-.titulo img{
-  width: 5vw;
-  padding: 10px;
-}
-.sobre{
-  margin: 0px;
-  text-align: center;
-  height: 60vw;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.sobre >h1{
-  font-size: 8px;
-  margin-top: 0px;
-  margin-bottom:5px;
-}
-
-nav{
-  margin: auto;
-  text-align: center;
-  display: flex;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  margin: auto;
-  font-size: 8px;;
-}
-
-h6{
-  display: none;
-  
-}
-nav li {
-  display:inline-block;
-}
-
-nav a {
-  display: block;
-  padding: 10px 20px;
-  color: black;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  transition: 0.8s;
-}
-
-footer {
-  width: 100vw;
-  margin: auto;
-  background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
-  height: 4vh;
-  align-self: center;
-  display: flex;
-
-}
-
-footer >h1{
-  font-size:8px;
-  text-align: center;
-  color: white;
-  padding: 5px;
-}
-
-.conteinercentro{
-  width: 100vw;
-  margin: auto;
-  display: flex;
- justify-content: space-between;
-  color: black;
-  border-top: 1px dotted #b2b4b3;
-}
-
-.ladoesquerdo {
-  width: 20vw;
-  padding: 5px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.ladodireito {
-  width: 80vw;
-  padding: 5px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border-left:1px dotted #b2b4b3;
-}
-.titulo2{
-  background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
-  padding: 0px;
-  margin: 1px;
-  width: 100%;
-  align-items: center;
-  justify-content:center ;
-  padding: 6px 0px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.titulo2 >h1{
-  color: white;
-  font-size: 8px;
-  text-decoration:underline dotted 1px;
-  margin: 0;
-}
-
-.titulo2 >h1:hover{
-  color: black;
-}
-
-.conteudo2{
-  background: #b2b4b3;
-  margin: 1px;
-  padding: 0px;
-  width: 100%;
-  border-radius:5px;
-}
-
-.conteudo2 >h1{
-  color: rgb(0, 0, 0);
-  font-size: 6px;
-  border-bottom: 1px dotted black;
-  margin: 2px;
-}
-
-.conteudo2 >h2{
-  color: rgb(0, 0, 0);
-  font-size: 6px;
-  margin: 2px;
-  padding: 3px;
-  text-align: justify;
-}
-
-iframe{
-  width: 98%;
-  height: 95%;
-  margin: 5px;
-}
-  }
+ 
