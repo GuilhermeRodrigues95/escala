@@ -3,10 +3,11 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: rgb(32, 32, 32);
 }
 
 header{
-    background: linear-gradient(to bottom, rgb(49, 108, 218), #0930e0);
+    background: linear-gradient(to bottom, rgb(35, 14, 153), #300770);
     margin: auto;
 }
 
@@ -85,7 +86,7 @@ nav ul {
   nav a {
     display: block;
     padding: 10px 20px;
-    color: black;
+    color:white;
     text-decoration: none;
   }
   
@@ -96,7 +97,7 @@ nav ul {
 
   footer {
     margin: auto;
-    background: linear-gradient(to bottom, rgb(49, 108, 218), #0930e0);
+    background: linear-gradient(to bottom, rgb(35, 14, 153), #300770);
     height: 6vh;
 
   }
