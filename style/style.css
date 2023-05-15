@@ -191,6 +191,8 @@ iframe{
   width: 98%;
   height: 95%;
   margin: 5px;
+  font-size: 20%;
+  border-radius: 10px;
 }
   @media screen and (max-width:700px){
     body{
