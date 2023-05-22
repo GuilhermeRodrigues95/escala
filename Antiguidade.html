@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisGEsc</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <style>
+     .ladodireito ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin: auto;
+        color: white;
+        
+      }
+  
+      .ladodireito li {
+        background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+        padding: 8px;
+        border: 1px dashed black;
+        margin: 2px;
+        cursor: grab;
+        opacity: 0.99; /* Valor de opacidade (80% de densidade) */
+      }
+  
+      .ladodireito li:hover {
+        background: #ddd;
+      }
+    </style>
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="titulo">
+                <img src="img/ebicon.png" alt="logoeb">
+                <h1>Sistema de Gerenciamento de Escalas <br> (SisGEsc)</h1>
+                <img src="img/ebicon.png" alt="logoeb">
+            </div>
+            <div class="sobre">
+                <h1> (Em fase de desenvolvimento)</h1>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="#">Escalas</a></li>
+          <li><a href="#">Previsão</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="conteinercentro">
+        <div class="ladoesquerdo">
+        </div>
+
+        <div class="ladodireito">
+          <h2>Antiguidade</h2>
+
+          <ul id="sortable-list">
+            <li draggable="true" data-index="0">Militar 01</li>
+            <li draggable="true" data-index="1">Militar 02</li>
+            <li draggable="true" data-index="2">Militar 03</li>
+            <li draggable="true" data-index="3">Militar 04</li>
+            <li draggable="true" data-index="4">Militar 05</li>
+            <li draggable="true" data-index="5">Militar 06</li>
+            <li draggable="true" data-index="6">Militar 07</li>
+            <li draggable="true" data-index="7">Militar 08</li>
+            <li draggable="true" data-index="8">Militar 09</li>
+            <li draggable="true" data-index="9">Militar 10</li>
+          </ul>
+<script>
+  var draggableList = document.getElementById('sortable-list');
+
+draggableList.addEventListener('dragstart', function (e) {
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', e.target.dataset.index);
+  e.target.classList.add('dragging');
+});
+
+draggableList.addEventListener('dragover', function (e) {
+  if (e.preventDefault) {
+    e.preventDefault();
+  }
+
+  e.dataTransfer.dropEffect = 'move';
+
+  return false;
+});
+
+draggableList.addEventListener('dragleave', function (e) {
+  e.target.classList.remove('drag-over');
+});
+
+draggableList.addEventListener('drop', function (e) {
+  if (e.stopPropagation) {
+    e.stopPropagation();
+  }
+
+  var sourceIndex = parseInt(e.dataTransfer.getData('text/plain'), 10);
+  var targetIndex = parseInt(e.target.dataset.index, 10);
+
+  if (sourceIndex < targetIndex) {
+    e.target.parentNode.insertBefore(document.querySelector('.dragging'), e.target.nextSibling);
+  } else {
+    e.target.parentNode.insertBefore(document.querySelector('.dragging'), e.target);
+  }
+
+  updateOrder(); // Atualiza a ordem após o arrastar e soltar
+
+  return false;
+});
+
+draggableList.addEventListener('dragend', function (e) {
+  e.target.classList.remove('dragging');
+});
+
+// Adicione índices aos itens para acompanhar a ordem
+var items = draggableList.getElementsByTagName('li');
+for (var i = 0; i < items.length; i++) {
+  items[i].dataset.index = i;
+}
+
+// Atualiza a ordem dos itens no Local Storage
+function updateOrder() {
+  var items = draggableList.getElementsByTagName('li');
+  var order = [];
+
+  for (var i = 0; i < items.length; i++) {
+    order.push(items[i].innerText);
+  }
+
+  localStorage.setItem('itemOrder', JSON.stringify(order));
+}
+
+// Carrega a ordem dos itens do Local Storage
+function loadOrder() {
+  var order = localStorage.getItem('itemOrder');
+
+  if (order) {
+    order = JSON.parse(order);
+
+    var items = draggableList.getElementsByTagName('li');
+
+    for (var i = 0; i < order.length; i++) {
+      items[i].innerText = order[i];
+    }
+  }
+}
+
+loadOrder();
+</script>
+        </div>
+      </div>
+      <footer>
+        <h1> Exército Brasileiro : Braço Forte, Mão Amiga.</h1>
+      </footer>
+</body>
+</html>
