@@ -2,7 +2,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   margin: auto;
-  background-color: rgb(4, 43, 6);
+  background-image: url('/img/fundo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
   font-family: 'open_sansextrabold','Open Sans',Arial,Helvetica,sans-serif;
 }
 
@@ -75,7 +77,11 @@ nav ul {
     width:100vw;
     margin: auto;
     font-size: 24px;
-  }
+    background: #1F752A ;
+    opacity: 0.8;
+}
+
+
   
   h6{
     font-size: 16px;
@@ -86,6 +92,7 @@ nav ul {
   }
   nav li {
     display:inline-block;
+    opacity: 1.0;
   }
   
   nav a {
@@ -93,6 +100,7 @@ nav ul {
     padding: 10px 20px;
     color:rgb(255, 255, 255);
     text-decoration: none;
+    opacity: 1.0;
   }
   
   nav a:hover {
@@ -102,7 +110,7 @@ nav ul {
 
   footer {
     margin: auto;
-    background: linear-gradient(to bottom, rgb(26, 161, 71), #11611c);
+    background: #1F752A;
     height: 6vh;
     width: 100vw;
 
@@ -125,7 +133,7 @@ nav ul {
     display: flex;
     color: black;
     border-top: 1px dotted #b2b4b3;
-    background-color:white;
+    background-color:#E6E6E6;
     border-radius: 10px;
     margin: 10px auto;
     box-shadow: 0 0 6px 6px rgba(39, 39, 39, 0.4);
