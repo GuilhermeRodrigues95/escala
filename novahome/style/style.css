@@ -105,7 +105,6 @@ header >h1{
   .conteiner{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 90vw;
     height: 70vh;
     background-color: white;
@@ -128,4 +127,55 @@ header >h1{
     justify-content: center;
     align-items: center;
     margin: 0px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: none;
+    transition: box-shadow 0.3s;
+    padding: 5px;
+    margin: 30px 10px;
+    border: 1px dashed black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: #000;
+  }
+
+  .div-box{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box >h1{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: justify;
+    padding: 50px 15px;
+    font-family: 'open_sansextrabold','Open Sans',Arial,Helvetica,sans-serif;
+  }
+  .box img{
+    width:50px;
+    padding: 0px;
+  }
+
+  .titulocentro{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .titulocentro >h1{
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: underline;
   }
